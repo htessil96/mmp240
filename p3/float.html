@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+   
+    <head> 
+    <title> float </title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .container{
+            background-color: #ddd;
+        }
+        .container:after {
+                content: '';
+                display: block;
+                clear: both;
+        }
+        .col {
+            float: left;
+            background: #aaa;
+        }.colr {
+            float: right;
+            background: #f00;
+        }
+        .w75 {
+            width: 75%;
+            
+        }
+        .w67 {
+            width: 66.66666%;
+        }
+        .w50 {
+            width: 50%;
+        }
+        .w33 {
+            width: 33.33333%;
+        }
+        .w25 {
+            width: 25%;
+        }
+    </style>
+    </head>
+    
+    <body>
+        <h1> float</h1>
+<!-- 2 50%-->
+        <div class= container>
+            <div class="col w50" >1</div>
+            <div class="col w50" >2</div>
+        </div> 
+<!-- 2 50% float right-->
+        <div class= container>
+            <div class="colr w50" >1</div>
+            <div class="colr w50" >2</div>
+        </div> 
+<!-- 4 25%-->
+        <div class= container>
+            <div class="col w25" >1</div>
+            <div class="col w25" >2</div>
+            <div class="col w25" >3</div>
+            <div class="col w25" >4</div>
+        </div>
+<!-- 1 75%, 1 25%-->        
+         <div class= container>
+            <div class="col w75" >1</div>  
+            <div class="col w25" >2</div>
+        </div> 
+<!-- 3 33%-->
+       <div class= container>
+            <div class="col w33" >1</div>
+            <div class="col w33" >2</div>
+            <div class="col w33" >3</div>
+        </div>
+<!-- 1 67%, 1 33%-->
+        <div class= container>
+            <div class="col w67" >1</div>
+            <div class="col w33" >2</div>
+        </div>
+    </body>
+    
+    
+</html>
